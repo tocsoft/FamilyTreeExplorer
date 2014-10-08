@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamilyTreeExplorer", "FamilyTreeExplorer\FamilyTreeExplorer.csproj", "{5F39318A-ABEB-4672-80DD-C62683D3126B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{8BA1EADF-BA0D-4AD0-A1BB-C2257B1B1CC0}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureWebsitePublishModule.psm1 = PublishScripts\AzureWebsitePublishModule.psm1
+		PublishScripts\Publish-WebApplicationWebsite.ps1 = PublishScripts\Publish-WebApplicationWebsite.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{CC2E316E-D406-492A-A705-37A8A10FA0F8}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\FamilyTreeExplorer-WAWS-dev.json = PublishScripts\Configurations\FamilyTreeExplorer-WAWS-dev.json
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamilyTreeExplorer.Extractor", "FamilyTreeExplorer.Extractor\FamilyTreeExplorer.Extractor.csproj", "{7BF8089D-7C41-4980-838D-ECF3809BED7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ2GEDCOM", "LINQ2GEDCOM\LINQ2GEDCOM.csproj", "{50BE357D-F164-42FD-8409-079C7750E48E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5F39318A-ABEB-4672-80DD-C62683D3126B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F39318A-ABEB-4672-80DD-C62683D3126B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F39318A-ABEB-4672-80DD-C62683D3126B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F39318A-ABEB-4672-80DD-C62683D3126B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BF8089D-7C41-4980-838D-ECF3809BED7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BF8089D-7C41-4980-838D-ECF3809BED7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BF8089D-7C41-4980-838D-ECF3809BED7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BF8089D-7C41-4980-838D-ECF3809BED7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50BE357D-F164-42FD-8409-079C7750E48E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50BE357D-F164-42FD-8409-079C7750E48E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50BE357D-F164-42FD-8409-079C7750E48E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50BE357D-F164-42FD-8409-079C7750E48E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CC2E316E-D406-492A-A705-37A8A10FA0F8} = {8BA1EADF-BA0D-4AD0-A1BB-C2257B1B1CC0}
+	EndGlobalSection
+EndGlobal
