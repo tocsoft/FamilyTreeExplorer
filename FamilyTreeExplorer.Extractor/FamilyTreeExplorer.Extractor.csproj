@@ -48,9 +48,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\LINQ2GEDCOM\LINQ2GEDCOM.csproj">
-      <Project>{50be357d-f164-42fd-8409-079c7750e48e}</Project>
-      <Name>LINQ2GEDCOM</Name>
+    <ProjectReference Include="..\External\Gedcom.Net\Gedcom.Net\Gedcom.Net.csproj">
+      <Project>{b3392bfd-5d8e-4ea2-b599-0b19c798fbb2}</Project>
+      <Name>Gedcom.Net</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -18,7 +18,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configura
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamilyTreeExplorer.Extractor", "FamilyTreeExplorer.Extractor\FamilyTreeExplorer.Extractor.csproj", "{7BF8089D-7C41-4980-838D-ECF3809BED7E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ2GEDCOM", "LINQ2GEDCOM\LINQ2GEDCOM.csproj", "{50BE357D-F164-42FD-8409-079C7750E48E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gedcom.Net", "External\Gedcom.Net\Gedcom.Net\Gedcom.Net.csproj", "{B3392BFD-5D8E-4EA2-B599-0B19C798FBB2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,10 +34,10 @@ Global
 		{7BF8089D-7C41-4980-838D-ECF3809BED7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7BF8089D-7C41-4980-838D-ECF3809BED7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7BF8089D-7C41-4980-838D-ECF3809BED7E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{50BE357D-F164-42FD-8409-079C7750E48E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{50BE357D-F164-42FD-8409-079C7750E48E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{50BE357D-F164-42FD-8409-079C7750E48E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{50BE357D-F164-42FD-8409-079C7750E48E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3392BFD-5D8E-4EA2-B599-0B19C798FBB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3392BFD-5D8E-4EA2-B599-0B19C798FBB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3392BFD-5D8E-4EA2-B599-0B19C798FBB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3392BFD-5D8E-4EA2-B599-0B19C798FBB2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

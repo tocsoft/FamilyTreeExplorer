@@ -1,0 +1,86 @@
+﻿<style>
+    #map {
+        height: 580px;
+    }
+    h2{
+        font-size:16px;
+    }
+    h3{
+        font-size:14px;
+    }
+</style>
+<div id="map"></div>
+<script>
+    var map = L.map('map').setView([51.505, -0.09], 6);
+    L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: 'Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
+        maxZoom: 18
+    }).addTo(map);
+
+    $.getJSON("/api/locations", {}, function (results) {
+
+
+        var markers = new L.MarkerClusterGroup();
+        
+
+        for (var i in results) {
+
+
+
+
+            var place = results[i];
+            var marker = L.marker([place.Place.lat, place.Place.lon]);
+
+            markers.addLayer(marker);
+
+            var html = "<h2>" + place.Address + "</h2>";
+
+            var births = "<ul> <h3>Births</h3>";
+            var incBirth = false;
+            //births
+            for (var j in place.LocationEvents) {
+                var e = place.LocationEvents[j];
+                if (e.Event == "Birth") {
+                    incBirth = true;
+                    births += "<li><a href='#" + e.PersonId + "'>" + e.Person + " (" + e.Date + ")</a></li>"
+                }
+            }
+            births += "</ul>";
+            if (incBirth) { html += births; }
+
+
+            var deaths = "<ul> <h3>Deaths</h3>";
+            var incdeaths = false;
+            //births
+            for (var j in place.LocationEvents) {
+                var e = place.LocationEvents[j];
+                if (e.Event == "Death") {
+                    incdeaths = true
+                    deaths += "<li><a href='#" + e.PersonId + "'>" + e.Person + " (" + e.Date + ")</a></li>"
+                }
+            }
+            deaths += "</ul>";
+            if (incdeaths) { html += deaths; }
+
+            var Residancys = "<ul> <h3>Residancy</h3>";
+            var incResidancy = false;
+            //births
+            for (var j in place.LocationEvents) {
+                var e = place.LocationEvents[j];
+                if (e.Event == "Residancy") {
+                    incResidancy = true
+                    Residancys += "<li><a href='#" + e.PersonId + "'>" + e.Person + " (" + e.Date + ")</a></li>"
+                }
+            }
+            Residancys += "</ul>";
+            if (incResidancy) { html += Residancys; }
+
+            marker.bindPopup(html);
+        }
+
+
+        map.addLayer(markers);
+    });
+
+
+</script>

@@ -1,0 +1,3 @@
+[submodule "External/Gedcom.Net"]
+	path = External/Gedcom.Net
+	url = https://github.com/tocsoft/Gedcom.Net.git
